@@ -1,0 +1,11 @@
+CC=g++
+CXX=g++
+CFLAGS= -std=c++11 -I src/ -W -Wall -pedantic
+LDFLAGS=`llvm-config --ldflags --system-libs --libs core`
+EXEC=vsopc
+DIR=vsopcompiler
+LEX=flex
+YACC=bison
+RM=rm
+GEN_H=parser.tab.hh location.hh position.hh stack.hh
+CXXFLAGS +=-std=c++17 -I src/
